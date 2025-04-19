@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      background: url('https://thumbs.dreamstime.com/b/modern-hostel-room-bunk-beds-spacious-modern-hostel-room-featuring-neatly-arranged-bunk-beds-large-windows-cozy-327610425.jpg') no-repeat center center/cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4; /* control the transparency */
+      z-index: -1;
+    }
+
+    .login-container {
+        
+      background: rgba(255, 255, 255, 0.9); /* Light transparent white background */
+      padding: 20px;
+      background: url('https://thumbs.dreamstime.com/b/modern-hostel-room-bunk-beds-spacious-modern-hostel-room-featuring-neatly-arranged-bunk-beds-large-windows-cozy-327610425.jpg') no-repeat center center/cover;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      width: 500px;
+    }
+    h1 {
+      color: silver ;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #5cb85c;
+      color: white;
+      padding: 10px;
+      width: 100px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <center><h1>Welcome To Our Hostel</h1>
+    <h2>Login</h2></center>
+    <form action="home.html" method="get">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+     <center> <input type="submit" value="Login" />
+      <br />
+      or <a href="register.html">Registration Form</a>
+      <br /><br />
+      <a href="forget.html">Forgot Password?</a></center>
+    </form>
+  </div>
+</body>
+</html>
